@@ -54,8 +54,8 @@ class Progresshud {
     return await _channel.invokeMethod('setDefaultMaskTypeGradient');
   }
 
-  static Future<bool> isVisiable() async {
-    return await _channel.invokeMethod('isVisiable');
+  static Future<bool> isVisible() async {
+    return await _channel.invokeMethod('isVisible');
   }
 
   static Future<String> dismiss() async {

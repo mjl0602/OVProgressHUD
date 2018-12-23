@@ -109,7 +109,7 @@ class _MyAppState extends State<MyApp> {
         callback();
         dismissTimer?.cancel();
         dismissTimer = new Timer(new Duration(seconds: 5), () async {
-          if (await Progresshud.isVisiable()) {
+          if (await Progresshud.isVisible()) {
             await Progresshud.dismiss();
             print('dismiss');
           } else {
