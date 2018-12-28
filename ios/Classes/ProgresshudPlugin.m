@@ -68,9 +68,9 @@
       result(@"success");
   }
     /// visiable
-  else if ([@"isVisiable" isEqualToString:call.method]) {
-      bool visiable = [SVProgressHUD isVisible];
-      result(@(visiable));
+  else if ([@"isVisible" isEqualToString:call.method]) {
+      bool visible = [SVProgressHUD isVisible];
+      result(@(visible));
   }
   /// dismiss
   else if ([@"dismiss" isEqualToString:call.method]) {
