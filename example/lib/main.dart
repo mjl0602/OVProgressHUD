@@ -12,7 +12,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  // String _platformVersion = 'Unknown';
 
   @override
   void initState() {
@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
+      // _platformVersion = platformVersion;
     });
   }
 
@@ -66,12 +66,12 @@ class _MyAppState extends State<MyApp> {
               button('showSuccessWithStatus', () async {
                 await Progresshud.showSuccessWithStatus('myinfo');
               }),
-              button('setDefaultStyleDark', () async {
-                await Progresshud.setDefaultStyleDark();
-              }),
-              button('setDefaultStyleLight', () async {
-                await Progresshud.setDefaultStyleLight();
-              }),
+              // button('setDefaultStyleDark', () async {
+              //   await Progresshud.setDefaultStyleDark();
+              // }),
+              // button('setDefaultStyleLight', () async {
+              //   await Progresshud.setDefaultStyleLight();
+              // }),
               button('setDefaultMaskTypeNone', () async {
                 await Progresshud.setDefaultMaskTypeNone();
               }),
@@ -113,7 +113,7 @@ class _MyAppState extends State<MyApp> {
             await Progresshud.dismiss();
             print('dismiss');
           } else {
-            print('不需要消失');
+            print('..');
           }
         });
       },
