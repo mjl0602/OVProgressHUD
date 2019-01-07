@@ -30,13 +30,13 @@ class Progresshud {
     return await _channel.invokeMethod('showSuccessWithStatus', status);
   }
 
-  static Future<String> setDefaultStyleDark() async {
-    return await _channel.invokeMethod('setDefaultStyleDark');
-  }
+  // static Future<String> setDefaultStyleDark() async {
+  //   return await _channel.invokeMethod('setDefaultStyleDark');
+  // }
 
-  static Future<String> setDefaultStyleLight() async {
-    return await _channel.invokeMethod('setDefaultStyleLight');
-  }
+  // static Future<String> setDefaultStyleLight() async {
+  //   return await _channel.invokeMethod('setDefaultStyleLight');
+  // }
 
   static Future<String> setDefaultMaskTypeNone() async {
     return await _channel.invokeMethod('setDefaultMaskTypeNone');
@@ -54,8 +54,8 @@ class Progresshud {
     return await _channel.invokeMethod('setDefaultMaskTypeGradient');
   }
 
-  static Future<bool> isVisiable() async {
-    return await _channel.invokeMethod('isVisiable');
+  static Future<bool> isVisible() async {
+    return await _channel.invokeMethod('isVisible');
   }
 
   static Future<String> dismiss() async {

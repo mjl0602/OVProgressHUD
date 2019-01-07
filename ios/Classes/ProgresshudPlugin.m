@@ -6,6 +6,8 @@
   FlutterMethodChannel* channel = [FlutterMethodChannel
       methodChannelWithName:@"progresshud"
             binaryMessenger:[registrar messenger]];
+  [SVProgressHUD setMaximumDismissTimeInterval:2.5];
+  [SVProgressHUD setMinimumDismissTimeInterval:1.5];
   ProgresshudPlugin* instance = [[ProgresshudPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
@@ -68,9 +70,9 @@
       result(@"success");
   }
     /// visiable
-  else if ([@"isVisiable" isEqualToString:call.method]) {
-      bool visiable = [SVProgressHUD isVisible];
-      result(@(visiable));
+  else if ([@"isVisible" isEqualToString:call.method]) {
+      bool visible = [SVProgressHUD isVisible];
+      result(@(visible));
   }
   /// dismiss
   else if ([@"dismiss" isEqualToString:call.method]) {
