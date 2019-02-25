@@ -1,6 +1,6 @@
-name: progresshud
+name: ovprogresshud
 description: A new flutter plugin project.
-version: 0.0.1
+version: 0.0.2
 author: Ma Jialun <675531696@qq.com>
 homepage: https://github.com/mjl0602/OVProgressHUD
 

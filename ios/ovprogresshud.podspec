@@ -2,7 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'progresshud'
+  s.name             = 'ovprogresshud'
   s.version          = '0.0.1'
   s.summary          = 'A new flutter plugin project.'
   s.description      = <<-DESC
@@ -17,6 +17,6 @@ A new flutter plugin project.
   s.dependency 'Flutter'
   s.dependency 'SVProgressHUD'
 
-  s.ios.deployment_target = '8.0'
+  # s.ios.deployment_target = '8.0'
 end
 

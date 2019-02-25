@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:progresshud/progresshud.dart';
+import 'package:ovprogresshud/progresshud.dart';
 
 void main() => runApp(MyApp());
 

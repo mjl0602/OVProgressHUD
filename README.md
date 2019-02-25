@@ -1,8 +1,6 @@
 # progresshud
 
-ProgressHUD for flutter app.
-
-
+EasyUse ProgressHUD for flutter app.
 
 ## Usage
 
