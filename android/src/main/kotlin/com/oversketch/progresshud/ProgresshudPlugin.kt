@@ -29,28 +29,38 @@ class ProgresshudPlugin: MethodCallHandler {
             result.success("Android ${android.os.Build.VERSION.RELEASE}")
         } else if (call.method == "show") {
             dialog.showWithMaskType(maskType)
+            result.success(true)
         } else if (call.method == "showWithStatus") {
             dialog.showWithStatus(call.arguments.toString(), maskType)
+            result.success(true)
         } else if (call.method == "showInfoWithStatus") {
             dialog.showInfoWithStatus(call.arguments.toString(), maskType)
+            result.success(true)
         } else if (call.method == "showErrorWithStatus") {
             dialog.showErrorWithStatus(call.arguments.toString(), maskType)
+            result.success(true)
         } else if (call.method == "showSuccessWithStatus") {
             dialog.showSuccessWithStatus(call.arguments.toString(), maskType)
+            result.success(true)
         } else if (call.method == "setDefaultMaskTypeNone") {
             maskType = SVProgressHUD.SVProgressHUDMaskType.None
             dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.None)
+            result.success(true)
         } else if (call.method == "setDefaultMaskTypeBlack") {
             maskType = SVProgressHUD.SVProgressHUDMaskType.Black
             dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.Black)
+            result.success(true)
         } else if (call.method == "setDefaultMaskTypeClear") {
             maskType = SVProgressHUD.SVProgressHUDMaskType.Clear
             dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.Clear)
+            result.success(true)
         } else if (call.method == "setDefaultMaskTypeGradient") {
             maskType = SVProgressHUD.SVProgressHUDMaskType.Gradient
             dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.Gradient)
+            result.success(true)
         } else if (call.method == "dismiss") {
             dialog.dismiss()
+            result.success(true)
         } else if (call.method == "isVisible") {
             if (dialog.isShowing) {
                 result.success(true)
