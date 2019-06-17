@@ -1,8 +1,8 @@
-name: progresshud
-description: A new flutter plugin project.
-version: 0.0.1
-author:
-homepage:
+name: ovprogresshud
+description: Useful hud contain loading（default），success，error，info。easyUse with oneLine code.
+version: 0.2.1
+author: Ma Jialun <675531696@qq.com>
+homepage: https://github.com/mjl0602/OVProgressHUD
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"

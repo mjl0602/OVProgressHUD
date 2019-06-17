@@ -6,6 +6,8 @@
   FlutterMethodChannel* channel = [FlutterMethodChannel
       methodChannelWithName:@"progresshud"
             binaryMessenger:[registrar messenger]];
+  [SVProgressHUD setMaximumDismissTimeInterval:2.5];
+  [SVProgressHUD setMinimumDismissTimeInterval:1.5];
   ProgresshudPlugin* instance = [[ProgresshudPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
