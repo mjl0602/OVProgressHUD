@@ -1,6 +1,6 @@
 name: ovprogresshud
 description: Useful hud contain loading（default），success，error，info。easyUse with oneLine code.
-version: 0.2.1
+version: 0.2.2
 author: Ma Jialun <675531696@qq.com>
 homepage: https://github.com/mjl0602/OVProgressHUD
 
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+# flutter packages pub publish --server=https://pub.dartlang.org 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
 
