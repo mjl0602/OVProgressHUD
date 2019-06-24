@@ -9,6 +9,21 @@ SVProgress HUD is used on iOS and SVProgress HUD-Android is used on Android (thi
 
 EasyUse ProgressHUD for flutter app.
 
+## Install
+
+Add this to your package's pubspec.yaml file:
+把如下字段加入你的`pubspec.yaml`文件：
+```
+dependencies:
+  flutter:
+    sdk: flutter
+  // 添加下面这一行
+  ovprogresshud: any
+```
+然后运行`flutter packages get`即可
+
+
+
 ## Usage
 
 ```dart
