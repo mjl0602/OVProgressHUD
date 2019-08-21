@@ -44,19 +44,19 @@ class ProgresshudPlugin: MethodCallHandler {
             result.success("success")
         } else if (call.method == "setDefaultMaskTypeNone") {
             maskType = SVProgressHUD.SVProgressHUDMaskType.None
-            dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.None)
+            // dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.None)
             result.success("success")
         } else if (call.method == "setDefaultMaskTypeBlack") {
             maskType = SVProgressHUD.SVProgressHUDMaskType.Black
-            dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.Black)
+            // dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.Black)
             result.success("success")
         } else if (call.method == "setDefaultMaskTypeClear") {
             maskType = SVProgressHUD.SVProgressHUDMaskType.Clear
-            dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.Clear)
+            // dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.Clear)
             result.success("success")
         } else if (call.method == "setDefaultMaskTypeGradient") {
             maskType = SVProgressHUD.SVProgressHUDMaskType.Gradient
-            dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.Gradient)
+            // dialog.showWithMaskType(SVProgressHUD.SVProgressHUDMaskType.Gradient)
             result.success("success")
         } else if (call.method == "dismiss") {
             dialog.dismissImmediately()
