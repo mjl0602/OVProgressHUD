@@ -51,9 +51,16 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              button('loadingAndSuccessAfter3s', () async {
+                await Progresshud.show();
+                await Future.delayed(Duration(seconds: 3));
+                await Progresshud.dismiss();
+                await Progresshud.showSuccessWithStatus('success');
+              }),
               button('show', () async {
                 await Progresshud.show();
               }),
+              
               button('showWithStatus', () async {
                 await Progresshud.showWithStatus('myinfo');
               }),
